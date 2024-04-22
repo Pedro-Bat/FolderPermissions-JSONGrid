@@ -16,7 +16,7 @@
 
       // Função para carregar os dados do arquivo JSON
       function loadData() {
-        fetch('sla.json') // Substitua pelo caminho correto do arquivo JSON
+        fetch('permissions.json') // Substitua pelo caminho correto do arquivo JSON
           .then(response => response.json())
           .then(data => {
             var jsonGrid = new JSONGrid(data, container);
