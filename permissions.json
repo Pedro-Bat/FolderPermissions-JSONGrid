@@ -13,17 +13,17 @@
         {
             "Permissões": "Read, Synchronize",
             "Usuário": "andre.pereira",
-            "Grupo": "grupo1"
+            "Grupo": "grupo2"
         },
         {
             "Permissões": "Read, Synchronize",
             "Usuário": "ana.lima",
-            "Grupo": "grupo1"
+            "Grupo": "grupo2"
         },
         {
             "Permissões": "Read, Synchronize",
             "Usuário": "pedro.almeida",
-            "Grupo": "grupo1"
+            "Grupo": "grupo3"
         },
         {
             "Permissões": "Modify, Synchronize",
