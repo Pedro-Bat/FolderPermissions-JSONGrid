@@ -1,0 +1,39 @@
+﻿{
+    "W:\\pasta\\pasta2": [
+        {
+            "Permissões": "Read, Synchronize",
+            "Usuário": "joao.silva",
+            "Grupo": "grupo1"
+        },
+        {
+            "Permissões": "Modify, Synchronize",
+            "Usuário": "maria.souza",
+            "Grupo": "grupo1"
+        },
+        {
+            "Permissões": "Read, Synchronize",
+            "Usuário": "andre.pereira",
+            "Grupo": "grupo1"
+        },
+        {
+            "Permissões": "Read, Synchronize",
+            "Usuário": "ana.lima",
+            "Grupo": "grupo1"
+        },
+        {
+            "Permissões": "Read, Synchronize",
+            "Usuário": "pedro.almeida",
+            "Grupo": "grupo1"
+        },
+        {
+            "Permissões": "Modify, Synchronize",
+            "Usuário": "admin.local",
+            "Grupo": "Admins. do domínio"
+        },
+        {
+            "Permissões": "Modify, Synchronize",
+            "Usuário": "backup.local",
+            "Grupo": "Admins. do domínio"
+        }
+    ]
+}
