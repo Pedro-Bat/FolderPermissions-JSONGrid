@@ -10,6 +10,7 @@ Interface interativa usando JSONGrid para visualizar e explorar os resultados.
 
 # Instalação e Uso
 Clone ou faça o download do repositório para o seu computador.  
+Adicione no PS1 as informações do caminho e o seu Dominio.
 Execute o script PowerShell fornecido (Folderpermissions.ps1) para iniciar a auditoria das permissões de pasta.  
 Após a conclusão da auditoria, um arquivo JSON será gerado com os resultados.  
 Abra o arquivo HTML fornecido (index.html) em um navegador da web para visualizar os resultados na interface interativa JSONGrid.  
