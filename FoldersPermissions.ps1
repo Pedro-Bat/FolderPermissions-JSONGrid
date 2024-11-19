@@ -48,4 +48,4 @@ foreach ($pasta in $pastas) {
 
 $json = $resultados | ConvertTo-Json
 
-$json | Out-File -FilePath 'caminho do output' -Encoding utf8
+$json | Out-File -FilePath 'caminho do output.permissions.json' -Encoding utf8
