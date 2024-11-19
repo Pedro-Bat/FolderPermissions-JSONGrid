@@ -15,17 +15,31 @@ foreach ($pasta in $pastas) {
             $grupo = $acl.IdentityReference.Value.Split('\')[1]
             try{
             $membros = Get-ADGroupMember -Identity $grupo -Recursive | Where-Object { $_.objectClass -eq 'user' } | Select-Object -ExpandProperty Name
-               }catch{$grupo = $null}
-               
-            foreach ($membro in $membros) {
-                if (-not $resultados.ContainsKey($pasta.FullName)) {
+               }catch{
+                   if (-not $resultados.ContainsKey($pasta.FullName)) {
                     $resultados[$pasta.FullName] = @()
+                   }
+
+                   $resultados[$pasta.FullName] += @{
+                    Permissões = $acl.FileSystemRights.ToString()
+                    Usuário = $grupo
+                    Grupo = $null
+                    }
+                    
+                    $membros = 'Null'
                 }
 
-                $resultados[$pasta.FullName] += @{
-                    Permissões = $acl.FileSystemRights.ToString()
-                    Usuário = $membro
-                    Grupo = $grupo
+            if($membros -ne 'Null'){   
+                foreach ($membro in $membros) {
+                    if (-not $resultados.ContainsKey($pasta.FullName)) {
+                        $resultados[$pasta.FullName] = @()
+                    }
+
+                    $resultados[$pasta.FullName] += @{
+                        Permissões = $acl.FileSystemRights.ToString()
+                        Usuário = $membro
+                        Grupo = $grupo
+                    } 
                 }
             }
         }
