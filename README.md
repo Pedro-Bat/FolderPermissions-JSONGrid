@@ -1,6 +1,6 @@
 # Funcionalidades
 Leitura de todas as pastas em um servidor de arquivos(o exemplo está somente no primeiro nível mas pode ser também executado de forma recursiva com parametro -recurse e controlado profundidade da recursividade com o -depth int).  
-Consulta as acls para obter as permissões de cada usuário em cada pasta e caso seja um grupo faz a consulta no Active Directory dos membros do grupo.  
+Consulta as acls para obter as permissões de cada usuário em cada pasta e caso seja um grupo faz a consulta no Active Directory dos membros do grupo ps: não pega os usuários locais somente os do dominio.  
 Armazenamento dos resultados em um arquivo JSON para fácil análise e compartilhamento.  
 Interface interativa usando JSONGrid para visualizar e explorar os resultados.  
 
