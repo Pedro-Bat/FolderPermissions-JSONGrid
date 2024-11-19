@@ -1,10 +1,10 @@
 #Script que le todas as pastas de um determinado diretorio e audita usuários e suas permissões sendo usuários locais ou de dominio e deixa num json.
-
+#Os parametros -directory e -depth  podem não funcionar se o script estiver sendo executado como administrador
 
 $diretorio = "caminho do diretorio"
 $resultados = @{}
 
-$pastas = Get-ChildItem -Path $diretorio -Directory #-recurse
+$pastas = Get-ChildItem -Path $diretorio -Directory #-recurse -depth <int>
 
 foreach ($pasta in $pastas) {
     $acls = Get-Acl -Path $pasta.FullName | Select-Object -ExpandProperty Access
